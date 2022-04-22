@@ -21,18 +21,75 @@ Balanced Accuracy Scores, Precision and Recall Scores for each model.
 
 ### RandomOverSampler
 - Balanced Accuracy Score: **.649**
-- Precision Score: 1.0 percent, high risk, 
+- Precision Score: 
+  - High Risk = 1%
+  - Low Risk = ~100%
 - Recall Score:
+  - High Risk = 63%
+  - Low Risk = 67%
 
 ![Confusion](/Resources/randomSamplingConfusion.png)
 ![Classification](/Resources/randomSamplingClassification.png)
 ---
-
 ### SMOTE Oversampling
 - Balanced Accuracy Score: **.608**
-- Precision Score:
-- Recall Score: 
+- Precision Score: 
+  - High Risk = 1%
+  - Low Risk = ~100%
+- Recall Score:
+  - High Risk = 55%
+  - Low Risk = 66%
 
 ![Confusion](/Resources/SmoteConfusion.png)
 ![Classification](/Resources/SmoteClassification.png)
+---
+### ClusterCentroids Undersampling
+- Balanced Accuracy Score: **.510**
+- Precision Score: 
+  - High Risk = 1%
+  - Low Risk = ~100%
+- Recall Score:
+  - High Risk = 57%
+  - Low Risk = 47%
+
+![Confusion](/Resources/ClusterCentroidsConfusion.png)
+![Classification](/Resources/ClusterCentroidsClassification.png)
+---
+### SMOTEENN Combination (Over and Under) Sampling
+- Balanced Accuracy Score: **.640**
+- Precision Score: 
+  - High Risk = 1%
+  - Low Risk = ~100%
+- Recall Score:
+  - High Risk = 70%
+  - Low Risk = 58%
+
+![Confusion](/Resources/SmoteennConfusion.png)
+![Classification](/Resources/SmoteennClassification.png)
+---
+
+### Balanced Random Forest Ensemble Alogorithm
+- Balanced Accuracy Score: **.788**
+- Precision Score: 
+  - High Risk = 4%
+  - Low Risk = ~100%
+- Recall Score:
+  - High Risk = 67%
+  - Low Risk = 91%
+
+![Confusion](/Resources/BalancedForestConfusion.png)
+![Classification](/Resources/BalancedForestClassification.png)
+---
+
+### Easy Ensemble AdaBoost Alogorithm
+- Balanced Accuracy Score: **.925**
+- Precision Score: 
+  - High Risk = 7%
+  - Low Risk = ~100%
+- Recall Score:
+  - High Risk = 91%
+  - Low Risk = 94%
+
+![Confusion](/Resources/EasyEnsembleConfusion.png)
+![Classification](/Resources/EasyEnsembleClassification.png)
 ---
