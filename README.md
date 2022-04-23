@@ -1,15 +1,16 @@
 # Credit_Risk_Analysis
-Evaluate and build machine learning models using scikit-learn to predict credit risk.
+Evaluate and build supervised machine learning models using scikit-learn and imbalanced-learn to predict credit risk.
 ## Overview of Analysis
-Using python and scikit-learn, this project evaluates machine learning models by using resampling to determine which is better at predicting credit risk.
 
-Oversampling is first attempted with **RandomOverSampler** and **Smote**.
+The analysis uses credit card credit dataset from LendingClub.  The dataset is unbalanced as the ratio of good loans far outnumbers the number of risky loans. Therefore, different techniques to train and evaluate models with unbalanced classes are used to predict risk.  The following Python scikit-learn and imbalanced-learn resampling models are compared:
 
-**ClusterCentroids** algorithm is used for undersampling.
+ - Oversampling is first attempted with **RandomOverSampler** and **Smote**.
 
-An approach that combines undersampling and oversampling is then run against the **SMOTEENN** algorithm. 
+- **ClusterCentroids** algorithm is used for undersampling.
 
-Finally using the imblearn.ensemble library, two ensemble classifiers, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier** are used to predict credit risk.
+- An approach that combines undersampling and oversampling:  **SMOTEENN** algorithm. 
+
+- Finally using the imblearn.ensemble library, two ensemble classifiers, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier** are evaluated.
 
 A confusion matrix and imbalanced classification report is generated for all six machine learning models.
 
