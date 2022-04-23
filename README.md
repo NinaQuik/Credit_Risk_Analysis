@@ -100,3 +100,15 @@ Balanced Accuracy Scores, Precision and Recall Scores for each model are present
 ![Confusion](/Resources/EasyEnsembleConfusion.png)
 ![Classification](/Resources/EasyEnsembleClassification.png)
 ---
+
+## Summary
+
+All the models were good at low risk precision, however there is a 99.5% chance that a credit is low risk, machine learning doesn't offer much advantage there. Precision of high risk (out of all the examples that were predicted high risk, how many were really high risk) ranged from 1% to 7%. False positives make of over 90% of high risk predictions.
+
+Sensitivity or Recall of high risk predictions (of all the high risk credits, how many were predicted as high risk) varied from from 55% to 91%.  Low risk recall followed similar patterns (47% to 94%).
+
+Of the six different models evaluated, Easy Ensemble AdaBoost had the highest balanced accuracy socre, .925, the highest recall scores (91% high risk, 94% low risk) and the least bad precision score (7% high risk).
+
+CluserCentroids undersampling performed the worst with a balanced accuracy score of .510, and recall scores (57% and 47%). More than half the low risk credit cards were incorrectly labeled as high risk!
+
+If one of the above six machine learning models had to be used for credit risk predictions, Easy Ensemble AdaBoost is the easy winner. However, a precision rate of 7% implies that there will be many low risk good customers incorrectly flagged as high risk.  A recommendation would be to look at more advanced machine learning techniques, ex, neural networks, to see if improvements can be found with other models.
