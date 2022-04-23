@@ -12,13 +12,19 @@ The analysis uses credit card credit dataset from LendingClub.  The dataset is u
 
 - Finally using the imblearn.ensemble library, two ensemble classifiers, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier** are evaluated.
 
-A confusion matrix and imbalanced classification report is generated for all six machine learning models.
+A confusion matrix and imbalanced classification report are generated for all six machine learning models.
 
 ### Tools
 Jupyter Notebook, Python 3.7.11, Pandas, Numpy, scikit-learn, imbalanced-learn
 
 ## Results
-Balanced Accuracy Scores, Precision and Recall Scores for each model.
+After cleaning up the dataset, there were 68,470 loan applicants considered "Low Risk" and 347 considered "High Risk". Less than 1% of loans are classified as "High Risk".
+
+The training and testing datasets were split using train_test_split into 75/25 percent ratio.
+
+And then six resampling machine learning models were trained and used to predict high/low risk.
+
+Balanced Accuracy Scores, Precision and Recall Scores for each model are presented below:
 
 ### RandomOverSampler
 - Balanced Accuracy Score: **.649**
